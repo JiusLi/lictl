@@ -21,28 +21,34 @@ Cobra is a CLI library for Go that empowers applications.
 This application is a tool to generate the needed files
 to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		wd, err := os.Getwd()
-		if err != nil {
-			fmt.Println(err)
-			os.Exit(1)
-		}
-		fmt.Println(wd)
+		//wd, err := os.Getwd()
+		//if err != nil {
+		//	fmt.Println(err)
+		//	os.Exit(1)
+		//}
+		//fmt.Println(wd)
+		//
+		//err = os.Mkdir("aaa", os.ModePerm)
+		//if err != nil {
+		//	fmt.Println(err)
+		//	os.Exit(1)
+		//}
+		//err = os.Chdir(wd + "/aaa")
+		//if err != nil {
+		//	fmt.Println(err)
+		//	os.Exit(1)
+		//}
+		//err = os.Mkdir("bbb", os.ModePerm)
+		//if err != nil {
+		//	fmt.Println(err)
+		//	os.Exit(1)
+		//}
 
-		err = os.Mkdir("aaa", os.ModePerm)
-		if err != nil {
-			fmt.Println(err)
-			os.Exit(1)
-		}
-		err = os.Chdir(wd + "/aaa")
-		if err != nil {
-			fmt.Println(err)
-			os.Exit(1)
-		}
-		err = os.Mkdir("bbb", os.ModePerm)
-		if err != nil {
-			fmt.Println(err)
-			os.Exit(1)
-		}
+		data := []byte("告诉小卢，他就是个垃圾~")
+
+		os.WriteFile("root.go", data, 0644)
+
+		fmt.Println("File created successfully.")
 	},
 }
 
