@@ -3,7 +3,7 @@ Copyright © 2023 JiusLi
 */
 package main
 
-import "lictl/cmd"
+import "github.com/JiusLi/lictl/cmd"
 
 func main() {
 	cmd.Execute()
