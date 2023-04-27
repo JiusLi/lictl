@@ -40,6 +40,7 @@ func (s *Server) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 
 // 判断需要执行的Http Method，从而查找对应的接口并且执行
 func (s *Server) doHandler(w http.ResponseWriter, req *http.Request) {
+	fmt.Println(req.Method)
 	switch req.Method {
 	case http.MethodPost:
 		{
@@ -55,6 +56,7 @@ func (s *Server) doHandler(w http.ResponseWriter, req *http.Request) {
 		}
 	default:
 		{
+
 			return
 		}
 	}
@@ -69,7 +71,7 @@ func (s *Server) RouteAdds(routes []Route) {
 		case http.MethodGet:
 			s.routeMap.get(route.Path, route.HandlerFunc)
 		default:
-			panic("未定义请求方式")
+			continue
 		}
 	}
 }
