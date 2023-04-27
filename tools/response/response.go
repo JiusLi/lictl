@@ -52,7 +52,7 @@ func okJson(w http.ResponseWriter, v any) {
 }
 
 func errorJson(w http.ResponseWriter, code int) {
-	doWriteJson(w, http.StatusBadRequest, nil)
+	doWriteJson(w, http.StatusInternalServerError, nil)
 }
 
 func doWriteJson(w http.ResponseWriter, code int, v any) error {
