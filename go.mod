@@ -1,4 +1,4 @@
-module github.com/JiusLi/lictl
+module lictl
 
 go 1.20
 
