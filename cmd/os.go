@@ -5,9 +5,9 @@ package cmd
 
 import (
 	"fmt"
-	"lictl/tools/osx"
 	"strings"
 
+	"github.com/JiusLi/Lictl/tools/osx"
 	"github.com/spf13/cobra"
 )
 
