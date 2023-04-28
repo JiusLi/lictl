@@ -1,3 +1,5 @@
+github.com/JiusLi/lictl v0.0.0-20230427094339-5d248b9d0019 h1:TbtHmaNxl8MX20K9BkGSt8uIY1UelAWsy5HhCXgpkgQ=
+github.com/JiusLi/lictl v0.0.0-20230427094339-5d248b9d0019/go.mod h1:Th5Y0IhRS9ZbaYYqdfzdGQ7PaIpj6D6IWgJz+ARXgNs=
 github.com/cpuguy83/go-md2man/v2 v2.0.2/go.mod h1:tgQtvFlXSQOSOSIRvRPT7W67SCa46tRHOmNcaadrF8o=
 github.com/gorilla/websocket v1.5.0 h1:PPwGk2jz7EePpoHN/+ClbZu8SPxiqlu12wZP/3sWmnc=
 github.com/gorilla/websocket v1.5.0/go.mod h1:YR8l580nyteQvAITg2hZ9XVh4b55+EU/adAjf1fMHhE=
